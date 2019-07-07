@@ -1,0 +1,94 @@
+public class BankAccount {
+    private int ano;
+    private String name;
+    private int balance;
+    private static int totalCash;
+   /* 
+    public static void showAvg(BankAccount tmp1, BankAccount tmp2, BankAccount tmp3, BankAccount tmp4, BankAccount tmp5){
+        System.out.println("Avg of 5  : "+(tmp1.balance+tmp2.balance+tmp3.balance+tmp4.balance+tmp5.balance)/5);
+    }
+    public static void showAvg(BankAccount tmp1, BankAccount tmp2, BankAccount tmp3, BankAccount tmp4){
+        System.out.println("Avg of 4  : "+(tmp1.balance+tmp2.balance+tmp3.balance+tmp4.balance)/4);
+    }
+    public static void showAvg(BankAccount tmp1, BankAccount tmp2, BankAccount tmp3){
+        System.out.println("Avg of 3  : "+(tmp1.balance+tmp2.balance+tmp3.balance)/3);
+    }
+    public static void showAvg(BankAccount tmp1, BankAccount tmp2){
+        System.out.println("Avg of 2  : "+(tmp1.balance+tmp2.balance)/2);
+    }*/
+    
+    // FUNCTOIN TO take OBBJECTS as input 
+        
+    public static void showAvg(BankAccount...var){
+        int count=0;
+        for(BankAccount tmp:var){
+            //int count=0;
+            count++;
+            
+      }
+
+        System.out.println("count is "+ count);
+        
+         int sum=0;
+        for(BankAccount s:var){
+         //BankAccount s=new BankAccount();
+           sum=sum+s.balance;
+            
+        }
+        
+        int avg;
+        
+        avg=sum/count;
+        
+        System.out.println("avergae is "+avg);
+    }
+            
+    
+    public static void showTotalCash(){
+        System.out.println("TOTAL CASH  : "+totalCash);
+    }
+ 
+    public void showData(){
+       System.out.println(ano+","+name+","+balance);
+    }
+    
+    
+    public void setData(int a, String b, int c){
+        ano=a;
+        name=b;
+        balance=balance+c;
+    //    totalCash=totalCash+c;
+    }
+
+    public static void main(String[] args) {
+   
+        BankAccount obj=new BankAccount();
+        BankAccount obj1=new BankAccount();
+        BankAccount obj2=new BankAccount();
+        
+        obj.setData(111,"asbdag", 2000);
+        obj1.setData(222,"xxxdag", 4000);
+        obj2.setData(333,"yyyyyg", 6000);
+        obj.showData();;
+        obj1.showData();
+        obj2.showData();
+        
+        
+        showAvg(obj,obj1,obj2);
+            
+                
+        
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
