@@ -1,0 +1,4 @@
+byte bytstr=65;
+	char chstr=(char)bytstr;
+	System.out.println("bsdk "+chstr);
+	
