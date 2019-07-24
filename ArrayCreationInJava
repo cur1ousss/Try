@@ -1,0 +1,9 @@
+int arr[];  // cannot create compile time sized array in java gives compile time error  
+arr=new int[size]; // size in integer numeber can be fetched before this code and pasted here
+          // treat arrays as objects hence use keyword new
+          
+
+
+
+\\unlike C++
+int arr[size];
