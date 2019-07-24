@@ -1,0 +1,78 @@
+\\ in c++
+
+// valid since maybe not give outofindex exceoption in c++
+    //??? what about current version of c++
+    
+ // hence works without error c++
+ 
+ 
+\\ in java
+
+// gives eerror outofindex exception in array created 
+package project1;
+
+
+\\CONCLUSION 
+    // cannot modify indexing 
+    // indexing always start from 0 as it is INHErrent and fundamental right of an array
+                 // exceoption in R language indexing start from 1
+ 
+#include<iostream>
+using namespace std;
+
+void line(){
+    cout<<"\n\n*****************************************\n";
+}
+int main(){
+    line();
+
+int arr[5];
+for(int i=1;i<=5;i++){
+    cin>>arr[i];
+}
+
+cout<<"\npritning array";
+
+for(int i=1;i<=5;i++){
+    cout<<"\t"<<arr[i];
+}
+line();
+    return 0;
+}
+
+
+\\ in java
+
+// gives eerror outofindex exception in array created 
+package project1;
+
+import java.util.Scanner;
+
+public class ArrayTryModifyIndex {
+
+	public static void line(){
+		System.out.println("\n\n************************************");
+	}
+	
+	public static void main(String args[]){
+	
+
+	Scanner var=new Scanner(System.in);
+	
+	    line();
+
+	int arr[];
+	arr=new int[5];
+	for(int i=1;i<=5;i++){
+		arr[i]=var.nextInt();
+	}
+
+System.out.println("printing array");
+	for(int i=1;i<=5;i++){
+
+		System.out.print("\t"+arr[i]);
+	}
+	line();
+}
+	
+}
